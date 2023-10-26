@@ -26,7 +26,7 @@ function BookingScreen() {
             try {
                 setLoading(true);
                 const response = await axios.post("http://localhost:5000/api/rooms/getroombyid", { roomid });
-                setTotalAmount(response.data.rentpernight * totaldays);
+                setTotalAmount(response.data.nightlyrate * totaldays);
                 setRoom(response.data);
                 setLoading(false);
             } catch (error) {
@@ -63,7 +63,7 @@ function BookingScreen() {
 
         } catch (error) {
             setLoading(false);
-            Swal.fire('OOPS!!! Something went wrong', 'Something went wrong', 'error');
+            Swal.fire('OOPS!!! an error has occured', 'error');
         }
     }
 

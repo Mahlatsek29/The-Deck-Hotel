@@ -6,7 +6,7 @@ const cors = require("cors");
 const dbConfig = require('./db');
 const roomsRoute = require('./routes/roomsRoute');
 const usersRoute = require('./routes/usersRoute');
-const bookingRoute = require('./routes/bookingsRoute');
+const bookingRoute = require('./routes/bookingRoute');
 
 // Middleware to parse JSON request bodies
 app.use(express.json());

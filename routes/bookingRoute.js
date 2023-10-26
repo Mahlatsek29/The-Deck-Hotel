@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Booking = require("../models/booking");
 const Room = require("../models/room");
-const moment = require("moment");
+//const moment = require("moment");
 
 // Make new booking
 router.post("/bookroom", async (req, res) => {

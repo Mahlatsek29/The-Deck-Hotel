@@ -92,10 +92,10 @@ function HomeScreen() {
                 <div className='col-md-3'>
                     <select className='form-control' value={type} onChange={(e) => { filterByType(e.target.value) }}>
                         <option value='all'>ALL</option>
-                        <option value='Heaven'>Heaven</option>
-                        <option value='Earth'>Earth</option>
-                        <option value='Junior'>Junior</option>
-                        <option value='Coastal Vista'>Coastal Vista</option>
+                        <option value='Standard'>Standard</option>
+                        <option value='Junior'> Junior </option>
+                        <option value='Queen '>Queen </option>
+                        
                         
                     </select>
 

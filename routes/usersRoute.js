@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const User = require("../models/user");
-const Rooms = require("../models/rooms"); // Assuming you have a 'Rooms' model
+const Rooms = require("../models/room"); // Assuming you have a 'Rooms' model
 
 // Register
 router.post("/register", async (req, res) => {
